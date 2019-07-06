@@ -3,11 +3,10 @@
 // se dispari pushalo nell-array
 
 var array = [];
-var valore = "";
 
 for (var i = 1; i <= 6; i++) {
 //chiedo valore ad utente
-var inserito = prompt('inserisci un valore',valore);
+var inserito = prompt('inserisci un valore');
 // se il valore inserito = empty; come era gia all'inizio (vedi var valore)
 // allora log scrive messaggio qui sotto
 if (inserito === "") {
