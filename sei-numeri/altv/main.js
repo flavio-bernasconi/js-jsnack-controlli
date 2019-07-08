@@ -11,12 +11,16 @@ var inserito = prompt('inserisci un valore');
 // allora log scrive messaggio qui sotto
 if (inserito === "") {
     console.log('non hai scritto niente');
+    i--;
+    // console.log(i,'indice meno 1 non andare avanti col ciclo');
 }
 //se il valore inserito non è un numero quindi isNaN
 //allora scrivi messaggio qui sotto
  else if (isNaN(inserito)){
   console.log(inserito);
-  console.log('isNan non so che fare');
+  console.log('non hai scritto un numero');
+  i--;
+  // console.log(i,'indice meno 1 non andare avanti col ciclo');
 }
 //se inserito esiste ed è a questo punto verificato che è un numero
 //se il resto di inserito / 2 != 0 inseriscilo nell-array;
@@ -24,18 +28,20 @@ if (inserito === "") {
 else if (inserito) {
     if (inserito % 2 !=0) {
       array.push(inserito);
-      console.log(array);
-    }
-    else if (inserito % 2 ==0){
-      console.log(inserito + ' è pari');
+      console.log(inserito);
     }
     else {
-      console.log('');
+      console.log(i + inserito + ' è pari');
     }
-} else {
-    console.log('come cosa hai scritto?!!!!??');
 }
+else {
+    console.log('cosa hai scritto?');
 }
+
+}
+
+
+console.log('numeri inseriti nell\'array',array);
 
 
 //
